@@ -1,0 +1,21 @@
+<h2>{{xInterval.name}} {{xInterval.lowBound}}-{{xInterval.highBound}}</h2>
+<div>
+  <label>Low:
+    <input [(ngModel)]="xInterval.lowBound" placeholder="0">
+  </label>
+  <label>High:
+    <input [(ngModel)]="xInterval.highBound" placeholder="0">
+  </label>
+</div>
+
+<h2>{{yInterval.name}} {{yInterval.lowBound}}-{{yInterval.highBound}}</h2>
+<div>
+  <label>Low:
+    <input [(ngModel)]="yInterval.lowBound" placeholder="0">
+  </label>
+  <label>High:
+    <input [(ngModel)]="yInterval.highBound" placeholder="0">
+  </label>
+</div>
+<br>
+<button (click)="myFunction()">Update Bounds</button>

@@ -1,0 +1,19 @@
+<h2>Current value of x: {{ currentX }} </h2>
+<button (click)="startX()">Start generate X</button>
+<button (click)="stopX()">Stop generate X</button>
+<button (click)="getX()">Capture X value</button>
+<h2>Current value of y: {{ currentY } </h2>
+<button (click)="startY()">Start generate Y</button>
+<button (click)="stopY()">Stop generate Y</button>
+<button (click)="getY()">Capture Y value</button>
+<div style="width: 40%;">
+  <canvas
+    baseChart
+    [chartType] = "'line'"
+    [datasets] = "chartData"
+    [labels] = "chartLabels"
+    [options] = "chartOptions"
+    [legend] = "true"
+    (chartClick) = "onChartClick($event)">
+  </canvas>
+</div>
